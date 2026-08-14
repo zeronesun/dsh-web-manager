@@ -51,13 +51,45 @@ chmod +x dsh-web.sh
 ```bash
 # 启动服务
 ./dsh-web.sh start
+```
 
+```bash
 # 查看状态
 ./dsh-web.sh status
+```
 
+```bash
 # 停止服务
 ./dsh-web.sh stop
 ```
+
+**运行演示**
+```bash
+# 查看帮助
+$ ./dsh-web.sh
+用法: ./dsh-web.sh {start|stop|restart|status|version}
+
+# 检查服务状态（首次运行，服务未启动）
+$ ./dsh-web.sh status
+DSH Web 服务未运行
+
+# 启动 DSH Web 服务（自动检测 dsh 版本，并提示 SSH 隧道命令）
+$ ./dsh-web.sh start
+✅ 检测到 dsh 版本: 0.1.0-rc.6
+✅ DSH Web 服务已启动（PID: 1299448）
+📄 日志文件: /home/suntest/daily-shell/dsh-web.log
+🌐 访问地址: http://localhost:3080（需配合 SSH 隧道）
+
+🔗 在您的本地电脑（客户端）上执行以下命令，建立 SSH 隧道：
+   ssh -N -L 3080:localhost:3080 user1@192.168.2.168
+（隧道建立后，在本地电脑浏览器访问 http://localhost:3080 即可）
+
+# 停止服务
+$ ./dsh-web.sh stop
+正在停止 DSH Web 服务（PID: 1299448）...
+✅ 服务已停止 
+```
+
 
 ### 4. 从远程访问
 
