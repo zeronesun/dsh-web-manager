@@ -24,7 +24,7 @@
 你可以通过 Git 克隆仓库，或直接下载脚本文件。
 
 ```bash
-git clone https://github.com/your-username/dsh-web-manager.git
+git clone https://github.com/zeronesun/dsh-web-manager
 cd dsh-web-manager
 ```
 
