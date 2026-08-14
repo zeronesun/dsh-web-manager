@@ -4,8 +4,8 @@
 # 用法: ./dsh-web.sh {start|stop|restart|status|version}
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-LOG_FILE="$SCRIPT_DIR/dsh-web.log"
-PID_FILE="$SCRIPT_DIR/dsh-web.pid"
+LOG_FILE="$SCRIPT_DIR/dsh-web-manager.log"
+PID_FILE="$SCRIPT_DIR/dsh-web-manager.pid"
 
 # 获取本机 IPv4 地址（优先使用默认路由源IP）
 get_ip() {
