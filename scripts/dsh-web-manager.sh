@@ -96,12 +96,12 @@ start() {
         if [ "$ip" != "无法自动获取IP，请手动指定" ]; then
             echo ""
             echo "🔗 在您的本地电脑（客户端）上执行以下命令，建立 SSH 隧道："
-            echo "   ssh -N -L 3080:localhost:3080 $user@$ip"
-            echo "（隧道建立后，在本地电脑浏览器访问 http://localhost:3080 即可）"
+            echo "   ssh -N -L 13080:localhost:3080 $user@$ip"
+            echo "（隧道建立后，在本地电脑浏览器访问 http://localhost:13080 即可）"
         else
             echo ""
             echo "⚠️  无法自动获取IP，请在客户端手动执行："
-            echo "   ssh -N -L 3080:localhost:3080 <用户名>@<本机IP>"
+            echo "   ssh -N -L 13080:localhost:3080 <用户名>@<本机IP>"
         fi
     else
         echo "❌ 启动失败，请检查日志: $LOG_FILE"
@@ -146,7 +146,7 @@ status() {
         local user=$(whoami)
         local ip=$(get_ip)
         if [ "$ip" != "无法自动获取IP，请手动指定" ]; then
-            echo "🔗 在您的本地电脑上执行: ssh -N -L 3080:localhost:3080 $user@$ip"
+            echo "🔗 在您的本地电脑上执行: ssh -N -L 13080:localhost:3080 $user@$ip"
         fi
     else
         echo "DSH Web 服务未运行"

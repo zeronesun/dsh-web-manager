@@ -53,8 +53,8 @@ $ ./scripts/dsh-web-manager.sh start
 🌐 访问地址: http://localhost:3080（需配合 SSH 隧道）
 
 🔗 在您的本地电脑（客户端）上执行以下命令，建立 SSH 隧道：
-   ssh -N -L 3080:localhost:3080 user1@192.168.2.168
-（隧道建立后，在本地电脑浏览器访问 http://localhost:3080 即可）
+   ssh -N -L 13080:localhost:3080 user1@192.168.2.168
+（隧道建立后，在本地电脑浏览器访问 http://localhost:13080 即可）
 ```
 
 ```bash
@@ -62,7 +62,7 @@ $ ./scripts/dsh-web-manager.sh status
 ✅ DSH Web 服务正在运行（PID: 1299448）
 📄 日志文件: /home/user/dsh-web-manager/dsh-web-manager.log
 🌐 访问地址: http://localhost:3080（需配合 SSH 隧道）
-🔗 在您的本地电脑上执行: ssh -N -L 3080:localhost:3080 user1@192.168.2.168
+🔗 在您的本地电脑上执行: ssh -N -L 13080:localhost:3080 user1@192.168.2.168
 ```
 
 ```bash
@@ -76,10 +76,10 @@ $ ./scripts/dsh-web-manager.sh stop
 DSH Web 默认监听 `127.0.0.1:3080`（仅本机可访问）。从本地电脑访问需建立 SSH 隧道：
 
 ```bash
-ssh -N -L 3080:localhost:3080 <用户名>@<服务器IP>
+ssh -N -L 13080:localhost:3080 <用户名>@<服务器IP>
 ```
 
-隧道建立后，本地浏览器打开 `http://localhost:3080` 即可。
+隧道建立后，本地浏览器打开 `http://localhost:13080` 即可。
 
 > 脚本启动时会自动生成完整的隧道命令，直接复制执行即可。
 
