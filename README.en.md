@@ -53,8 +53,8 @@ $ ./scripts/dsh-web-manager.sh start
 🌐 Access URL: http://localhost:3080 (requires SSH tunnel)
 
 🔗 Run the following command on your local machine to establish the SSH tunnel:
-   ssh -N -L 3080:localhost:3080 user1@192.168.2.168
-(After the tunnel is established, open http://localhost:3080 in your local browser)
+   ssh -N -L 13080:localhost:3080 user1@192.168.2.168
+(After the tunnel is established, open http://localhost:13080 in your local browser)
 ```
 
 ```bash
@@ -62,7 +62,7 @@ $ ./scripts/dsh-web-manager.sh status
 ✅ DSH Web service is running (PID: 1299448)
 📄 Log file: /home/user/dsh-web-manager/dsh-web-manager.log
 🌐 Access URL: http://localhost:3080 (requires SSH tunnel)
-🔗 Run on your local machine: ssh -N -L 3080:localhost:3080 user1@192.168.2.168
+🔗 Run on your local machine: ssh -N -L 13080:localhost:3080 user1@192.168.2.168
 ```
 
 ```bash
@@ -76,10 +76,10 @@ Stopping DSH Web service (PID: 1299448)...
 DSH Web listens on `127.0.0.1:3080` (local access only). To access from your local machine, establish an SSH tunnel:
 
 ```bash
-ssh -N -L 3080:localhost:3080 <username>@<server-ip>
+ssh -N -L 13080:localhost:3080 <username>@<server-ip>
 ```
 
-Once the tunnel is established, open `http://localhost:3080` in your local browser.
+Once the tunnel is established, open `http://localhost:13080` in your local browser.
 
 > The script auto‑generates the complete tunnel command on startup — just copy and run it.
 
