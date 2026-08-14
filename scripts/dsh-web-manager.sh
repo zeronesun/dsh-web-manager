@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # DSH Web 服务管理脚本（路径使用当前目录）
-# 用法: ./dsh-web.sh {start|stop|restart|status|version}
+# 用法: ./scripts/dsh-web-manager.sh {start|stop|restart|status|version}
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 LOG_FILE="$SCRIPT_DIR/dsh-web-manager.log"
