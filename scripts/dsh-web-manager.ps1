@@ -7,9 +7,9 @@
 .PARAMETER Command
     子命令: start, stop, restart, status, version
 .EXAMPLE
-    .\dsh-web-manager.ps1 start
+    & ".\dsh-web-manager.ps1" start
 .EXAMPLE
-    .\dsh-web-manager.ps1 status
+    & ".\dsh-web-manager.ps1" status
 #>
 
 param(
@@ -177,6 +177,6 @@ switch ($Command) {
     "status"  { Status-Dsh }
     "version" { Version-Dsh }
     default   { 
-        Write-Host "用法: .\dsh-web-manager.ps1 {start|stop|restart|status|version}" -ForegroundColor Cyan
+        Write-Host "用法: & `".\dsh-web-manager.ps1`" {start|stop|restart|status|version}" -ForegroundColor Cyan
     }
 }
