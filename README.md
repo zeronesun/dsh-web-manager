@@ -25,7 +25,7 @@
 ### Linux / Mac（服务器端）
 
 ```bash
-# 1. 克隆仓库
+# 1. 克隆仓库（<仓库克隆地址> 替换为你有权限的代码托管平台上的实际地址）
 git clone <仓库克隆地址>
 cd dsh-web-manager
 
@@ -39,7 +39,7 @@ chmod +x scripts/dsh-web-manager.sh
 ### Windows（本地）
 
 ```powershell
-# 1. 克隆仓库
+# 1. 克隆仓库（<仓库克隆地址> 替换为你有权限的代码托管平台上的实际地址）
 git clone <仓库克隆地址>
 cd dsh-web-manager
 

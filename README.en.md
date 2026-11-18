@@ -22,8 +22,8 @@
 ## Quick Start
 
 ```bash
-# 1. Clone the repository
-git clone <仓库克隆地址>
+# 1. Clone the repository (replace <repo-clone-url> with the actual URL on the hosting platform you have access to)
+git clone <repo-clone-url>
 cd dsh-web-manager
 
 # 2. Make it executable
