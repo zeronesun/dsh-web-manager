@@ -2,3 +2,4 @@
 *.pid
 .env
 node_modules/
+.opencode/
